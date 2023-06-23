@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-toe.png">
+</head>
+
+<body>
+    <!-- menu lateral -->
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>TOE</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.php">Registrar</a>
+                <a href="Indexx.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+        </div>
+    </header>
+    <!-- parte del menu lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="marvel.html">Marvel</a>
+                <a href="dc.html">Dc</a>
+                <a href="musica.html">Musica</a>
+                <a href="https://instagram.com/http.josu?igshid=MzNlNGNkZWQ4Mg==">Instagram</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <!-- contenedor de productos -->
+    <center>
+        <br><br><br><br><br><br>
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/3-groot.p1.png" width="150px" height="150px">
+                        <span class="titulo-item">llavero de goot</span>
+                        <span class="precio-art">$110.00</span>
+                        <button onclick="agregarProducto('Llavero', 110)" class="boton-art">Agregar al carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/3-teclado.p2.png" width="150px" height="150px">
+                        <span class="titulo-item">Teclado de Iron Man</span>
+                        <span class="precio-art">$260.00</span>
+                        <button onclick="agregarProducto('Teclado ', 260)" class="boton-art">Agregar al carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/3-carpeta.p3.png" width="150px" height="150px">
+                        <span class="titulo-item">Carpeta de Spiderman</span>
+                        <span class="precio-art">$160.00</span>
+                        <button onclick="agregarProducto('Carpeta de Spiderman', 160)" class="boton-art">Agregar al
+                            carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/3-comic.p4.png" width="150px" height="150px">
+                        <span class="titulo-item">Varios comic marvel</span>
+                        <span class="precio-art">$1700.00</span>
+                        <button onclick="agregarProducto('Comic´s', 1700)" class="boton-art">Agregar al carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/3-woman.p5.png" width="150px" height="150px">
+                        <span class="titulo-item">Mujer araña</span>
+                        <span class="precio-art">$230.00</span>
+                        <button onclick="agregarProducto('Mujer araña ', 230)" class="boton-art">Agregar al
+                            carrito</button>
+
+                    </div>
+                </div>
+                <!-- siguientes productos -->
+            </div>
+            </div>
+            </div>
+        </section>
+        <br><br><br><br>
+    </center>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="foo-row">
+                <div class="foo-col">
+                    <h1>Colecciones TOE.</h1>
+                    <div id="carrito">
+                        <h2>Carrito de compras</h2>
+                        <li id="lista-productos">
+                            <!-- Aquí se agregan los productos -->
+                        </li>
+                        <p>Total: $<span id="total">0.00</span></p><br>
+                        <button onclick="vaciarCarrito()" class="diseño">Vaciar carrito</button>
+                        <button onclick="comprar()" class="diseño">Pagar</button>
+                    </div>
+
+                </div>
+                <div class="foo-col">
+                    <h2>Contactenos</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/http.josu/?igshid=MzNlNGNkZWQ4Mg%3D%3D">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/http.josu/?igshid=MzNlNGNkZWQ4Mg%3D%3D">Instagram</a>
+                        </li>
+                        <li><a href="https://wa.me/9992804729?text=Hola%20quiero%20contactar%20usteded">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="javascritp/carrito.js"></script>
+    <!-- libreria para las alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="javascritp/alerta.js"></script>
+</body>
+
+</html>

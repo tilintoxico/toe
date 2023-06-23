@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-toe.png">
+</head>
+
+<body>
+    <!-- menu lateral -->
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>TOE</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Cerrar Sesion</a>
+                <a href="ds-index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+        </div>
+    </header>
+    <!-- parte del menu lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="ds-marvel.html">Marvel</a>
+                <a href="ds-dc.html">Dc</a>
+                <a href="ds-musica.html">Musica</a>
+                <a href="https://instagram.com/http.josu?igshid=MzNlNGNkZWQ4Mg==">Instagram</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <!-- contenedor de productos -->
+    <center>
+        <br><br><br><br><br><br>
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/2-taza.p1.png" width="150px" height="150px">
+                        <span class="titulo-item">Taza de Batman</span>
+                        <span class="precio-art">$110.05</span>
+                        <button onclick="agregarProducto('Taza', 110.05)" class="boton-art">Agregar al carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/2-carpeta.p2.png" width="150px" height="150px">
+                        <span class="titulo-item">Carpeta de DC</span>
+                        <span class="precio-art">$76.05</span>
+                        <button onclick="agregarProducto('Carpeta', 76.05)" class="boton-art">Agregar al
+                            carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/2-mascara.p3.png" width="150px" height="150px">
+                        <span class="titulo-item">Mascara de Batman</span>
+                        <span class="precio-art">$136.00</span>
+                        <button onclick="agregarProducto('Mascara Batman', 136)" class="boton-art">Agregar al
+                            carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/2-carpeta.p4.png" width="150px" height="150px">
+                        <span class="titulo-item">Carpeta varios personajes</span>
+                        <span class="precio-art">$144.05</span>
+                        <button onclick="agregarProducto('Cp personajes', 144.05)" class="boton-art">Agregar al
+                            carrito</button>
+
+                    </div>
+                </div>
+                <div class="producto">
+                    <div id="productos">
+
+                        <img src="img/2-traje.p5.png" width="150px" height="150px">
+                        <span class="titulo-item">Traje de superman</span>
+                        <span class="precio-art">$994.05</span>
+                        <button onclick="agregarProducto('Traje ', 994.06)" class="boton-art">Agregar al
+                            carrito</button>
+
+                    </div>
+                </div>
+                <!-- siguientes productos -->
+            </div>
+            </div>
+            </div>
+        </section>
+        <br><br><br><br>
+    </center>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="foo-row">
+                <div class="foo-col">
+                    <h1>Colecciones TOE.</h1>
+                    <div id="carrito">
+                        <h2>Carrito de compras</h2>
+                        <li id="lista-productos">
+                            <!-- Aquí se agregan los productos -->
+                        </li>
+                        <p>Total: $<span id="total">0.00</span></p><br>
+                        <button onclick="vaciarCarrito()" class="diseño">Vaciar carrito</button>
+                        <button onclick="comprar()" class="diseño">Pagar</button>
+                    </div>
+
+                </div>
+                <div class="foo-col">
+                    <h2>Contactenos</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/http.josu/?igshid=MzNlNGNkZWQ4Mg%3D%3D">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/http.josu/?igshid=MzNlNGNkZWQ4Mg%3D%3D">Instagram</a>
+                        </li>
+                        <li><a href="https://wa.me/9992804729?text=Hola%20quiero%20contactar%20usteded">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="javascritp/carrito.js"></script>
+</body>
+
+</html>
